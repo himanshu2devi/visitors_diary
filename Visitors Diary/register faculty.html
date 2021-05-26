@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Registration</title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/form-basic.css">
+
+</head>
+
+
+	<header>
+	<h1><b>Visitor's Diary</b></h1>
+    </header>
+
+    <ul>
+        
+      <li><h1>New Registration.</h1></li>
+
+    </ul>
+
+
+    <div class="main-content">
+
+
+        <form class="form-basic" method="post" action="#">
+
+            <div class="form-title-row">
+                <h1>Faculty Registration</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span><h3>Full name</h3></span>
+                    <input type="text" name="name">
+                </label>
+            </div>
+
+		<div class="form-row">
+                <label>
+                    <span><h3>Department</h3></span>
+                    <input type="text" name="name">
+                </label>
+            </div>
+
+
+            <div class="form-row">
+                <label>
+                    <span><h3>Mobile No</h3></span>
+                    <input type="telNo" name="tel">
+                </label>
+            </div>
+	
+		<div class="form-row">
+                <label>
+                    <span><h3>Email</h3></span>
+                    <input type="email" name="email">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span><h3>Address</h3></span>
+                    <textarea name="textarea"></textarea>
+                </label>
+            </div>
+
+        
+            <div class="form-row">
+              
+            </div>
+
+            <div class="form-row">
+                <button type="submit"></h3>Register</h3></button>
+            </div>
+
+        </form>
+
+    </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+
+        // Here is how to show an error message next to a form field
+
+        var errorField = $('.form-input-name-row');
+
+        // Adding the form-invalid-data class will show
+        // the error message and the red x for that field
+
+        errorField.addClass('form-invalid-data');
+        errorField.find('.form-invalid-data-info').text('Please enter your name');
+
+
+        // Here is how to mark a field with a green check mark
+
+        var successField = $('.form-input-email-row');
+
+        successField.addClass('form-valid-data');
+    });
+
+</script>
+</body>
+
+</html>
